@@ -12,10 +12,20 @@ Each top-level directory is a Stow package mirroring `$HOME` paths:
 
 ## Packages
 
-- **wm**: hypr, waybar
-- **shell**: bash, starship, git
-- **apps**: ghostty, walker, nvim, mpv, lazygit
-- **system**: fastfetch, xdg
+| Package | Purpose |
+|---------|---------|
+| hypr | Window manager |
+| waybar | Status bar |
+| bash | Shell |
+| starship | Prompt |
+| git | VCS config |
+| ghostty | Terminal emulator |
+| walker | Application launcher |
+| nvim | Text editor |
+| mpv | Media player |
+| lazygit | Git TUI |
+| fastfetch | System info |
+| xdg | Default apps, user dirs |
 
 ## Commands
 

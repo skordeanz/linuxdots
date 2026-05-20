@@ -12,12 +12,20 @@ cd ~/.dotfiles
 
 ## Packages
 
-| Category | Packages |
-|----------|----------|
-| WM | hypr, waybar |
-| Shell | bash, starship, git |
-| Apps | ghostty, walker, nvim, mpv, lazygit |
-| System | fastfetch, xdg |
+| Package | Purpose |
+|---------|---------|
+| hypr | Window manager |
+| waybar | Status bar |
+| bash | Shell |
+| starship | Prompt |
+| git | VCS config |
+| ghostty | Terminal emulator |
+| walker | Application launcher |
+| nvim | Text editor |
+| mpv | Media player |
+| lazygit | Git TUI |
+| fastfetch | System info |
+| xdg | Default apps, user dirs |
 
 ## Commands
 
