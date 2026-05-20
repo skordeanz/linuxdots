@@ -5,3 +5,7 @@
 Thumbs.db
 __pycache__
 *.pyc
+
+# auto-generated nvim files
+nvim/.config/nvim/lazy-lock.json
+nvim/.config/nvim/lazyvim.json
