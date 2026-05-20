@@ -14,18 +14,18 @@ Each top-level directory is a Stow package mirroring `$HOME` paths:
 
 | Package | Purpose |
 |---------|---------|
-| hypr | Window manager — [config](hypr/.config/hypr/) |
-| waybar | Status bar — [config](waybar/.config/waybar/) |
-| bash | Shell — [config](bash/) |
-| starship | Prompt — [config](starship/.config/) |
-| git | VCS — [config](git/.config/git/) |
-| ghostty | Terminal — [config](ghostty/.config/ghostty/) |
-| walker | Launcher — [config](walker/.config/walker/) |
-| nvim | Editor — [config](nvim/.config/nvim/) |
-| mpv | Media player — [config](mpv/.config/mpv/) |
-| lazygit | Git TUI — [config](lazygit/.config/lazygit/) |
-| fastfetch | System info — [config](fastfetch/.config/fastfetch/) |
-| xdg | Default apps, dirs — [config](xdg/.config/) |
+| [hypr](hypr/.config/hypr/) | Window manager |
+| [waybar](waybar/.config/waybar/) | Status bar |
+| [bash](bash/) | Shell |
+| [starship](starship/.config/) | Prompt |
+| [git](git/.config/git/) | VCS |
+| [ghostty](ghostty/.config/ghostty/) | Terminal |
+| [walker](walker/.config/walker/) | Launcher |
+| [nvim](nvim/.config/nvim/) | Editor |
+| [mpv](mpv/.config/mpv/) | Media player |
+| [lazygit](lazygit/.config/lazygit/) | Git TUI |
+| [fastfetch](fastfetch/.config/fastfetch/) | System info |
+| [xdg](xdg/.config/) | Default apps, dirs |
 
 ## Commands
 
