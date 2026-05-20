@@ -12,20 +12,20 @@ Each top-level directory is a Stow package mirroring `$HOME` paths:
 
 ## Packages
 
-| Package | Purpose |
-|---------|---------|
-| hypr | Window manager |
-| waybar | Status bar |
-| bash | Shell |
-| starship | Prompt |
-| git | VCS config |
-| ghostty | Terminal emulator |
-| walker | Application launcher |
-| nvim | Text editor |
-| mpv | Media player |
-| lazygit | Git TUI |
-| fastfetch | System info |
-| xdg | Default apps, user dirs |
+| Package | Purpose | Config |
+|---------|---------|--------|
+| hypr | Window manager | [hypr/](hypr/.config/hypr/) |
+| waybar | Status bar | [waybar/](waybar/.config/waybar/) |
+| bash | Shell | [bash/](bash/) |
+| starship | Prompt | [starship/](starship/.config/) |
+| git | VCS config | [git/](git/.config/git/) |
+| ghostty | Terminal emulator | [ghostty/](ghostty/.config/ghostty/) |
+| walker | Application launcher | [walker/](walker/.config/walker/) |
+| nvim | Text editor | [nvim/](nvim/.config/nvim/) |
+| mpv | Media player | [mpv/](mpv/.config/mpv/) |
+| lazygit | Git TUI | [lazygit/](lazygit/.config/lazygit/) |
+| fastfetch | System info | [fastfetch/](fastfetch/.config/fastfetch/) |
+| xdg | Default apps, user dirs | [xdg/](xdg/.config/) |
 
 ## Commands
 
