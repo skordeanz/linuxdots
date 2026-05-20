@@ -12,20 +12,20 @@ Each top-level directory is a Stow package mirroring `$HOME` paths:
 
 ## Packages
 
-| Package | Purpose | Config |
-|---------|---------|--------|
-| hypr | Window manager | [hypr/](hypr/.config/hypr/) |
-| waybar | Status bar | [waybar/](waybar/.config/waybar/) |
-| bash | Shell | [bash/](bash/) |
-| starship | Prompt | [starship/](starship/.config/) |
-| git | VCS config | [git/](git/.config/git/) |
-| ghostty | Terminal emulator | [ghostty/](ghostty/.config/ghostty/) |
-| walker | Application launcher | [walker/](walker/.config/walker/) |
-| nvim | Text editor | [nvim/](nvim/.config/nvim/) |
-| mpv | Media player | [mpv/](mpv/.config/mpv/) |
-| lazygit | Git TUI | [lazygit/](lazygit/.config/lazygit/) |
-| fastfetch | System info | [fastfetch/](fastfetch/.config/fastfetch/) |
-| xdg | Default apps, user dirs | [xdg/](xdg/.config/) |
+| Package | Purpose |
+|---------|---------|
+| hypr | Window manager — [config](hypr/.config/hypr/) |
+| waybar | Status bar — [config](waybar/.config/waybar/) |
+| bash | Shell — [config](bash/) |
+| starship | Prompt — [config](starship/.config/) |
+| git | VCS — [config](git/.config/git/) |
+| ghostty | Terminal — [config](ghostty/.config/ghostty/) |
+| walker | Launcher — [config](walker/.config/walker/) |
+| nvim | Editor — [config](nvim/.config/nvim/) |
+| mpv | Media player — [config](mpv/.config/mpv/) |
+| lazygit | Git TUI — [config](lazygit/.config/lazygit/) |
+| fastfetch | System info — [config](fastfetch/.config/fastfetch/) |
+| xdg | Default apps, dirs — [config](xdg/.config/) |
 
 ## Commands
 
