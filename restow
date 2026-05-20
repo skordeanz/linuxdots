@@ -1,0 +1,15 @@
+#!/bin/bash
+set -euo pipefail
+
+packages="bash git hypr waybar ghostty nvim fastfetch starship xdg mpv lazygit walker"
+
+cd "$(dirname "$0")"
+
+if [ "${1:-}" = "-n" ]; then
+  stow -n $packages
+elif [ "${1:-}" = "--adopt" ]; then
+  stow --adopt $packages
+else
+  stow -D $packages 2>/dev/null
+  stow $packages
+fi
