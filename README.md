@@ -1,8 +1,8 @@
-<table>
-<tr>
-<td valign="top" width="50%">
+<p align="center">
+  <img src="assets/linuxdots.svg" alt="linuxdots" width="600">
+</p>
 
-### Usage
+## Usage
 
 ```bash
 git clone git@github.com:skordeanz/linuxdots.git ~/.dotfiles
@@ -10,7 +10,7 @@ cd ~/.dotfiles
 ./restow
 ```
 
-### Packages
+## Packages
 
 | Package | Purpose |
 |---------|---------|
@@ -27,19 +27,10 @@ cd ~/.dotfiles
 | [fastfetch](fastfetch/.config/fastfetch/) | System info |
 | [xdg](xdg/.config/) | Default apps, dirs |
 
-### Commands
+## Commands
 
 ```bash
 ./restow       # re-stow all packages
 ./restow -n    # dry run
 ./restow --adopt  # overwrite stow tree with live configs
 ```
-
-</td>
-<td valign="middle" align="center" width="50%">
-
-<img src="assets/linuxdots.svg" alt="linuxdots" width="350">
-
-</td>
-</tr>
-</table>
