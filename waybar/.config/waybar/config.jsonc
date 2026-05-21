@@ -106,7 +106,8 @@
   },
     "custom/idle-indicator": {
     "on-click": "omarchy-toggle-idle",
-    "exec": "~/.config/waybar/idle-indicator.sh",
+    "exec": "if pgrep -x hypridle >/dev/null; then echo '{\"text\":\"󱫖\",\"tooltip\":\"click to disable\"}'; else echo '{\"text\":\"󱫖\",\"class\":\"active\",\"tooltip\":\"click to enable\"}'; fi",
+    "interval": 5,
     "signal": 9,
     "return-type": "json"
   },
@@ -204,7 +205,7 @@
     }
   },
   "custom/bt": {
-    "exec": "~/.config/waybar/bluetooth-status.sh",
+    "exec": "P=$(busctl get-property org.bluez /org/bluez/hci0 org.bluez.Adapter1 Powered 2>/dev/null); C=$(for d in $(busctl tree org.bluez 2>/dev/null | grep -oP '/org/bluez/hci0/dev_\\w+'); do busctl get-property org.bluez $d org.bluez.Device1 Connected 2>/dev/null; done | grep -c true); if [ \"$P\" = \"b true\" ] && [ \"$C\" -gt 0 ]; then echo \"{\\\"text\\\":\\\"<span size='6pt'>BT </span>$(printf '%02d' $C)\\\",\\\"tooltip\\\":\\\"Connected\\\"}\"; elif [ \"$P\" = \"b true\" ]; then echo \"{\\\"text\\\":\\\"<span size='6pt'>BT </span>ON\\\",\\\"tooltip\\\":\\\"No devices connected\\\"}\"; else echo \"{\\\"text\\\":\\\"<span size='6pt'>BT </span>OFF\\\",\\\"tooltip\\\":\\\"Bluetooth disabled\\\"}\"; fi",
     "return-type": "json",
     "interval": 5,
     "on-click": "omarchy-launch-bluetooth",
