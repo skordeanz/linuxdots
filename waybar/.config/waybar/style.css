@@ -55,10 +55,6 @@ window#waybar.empty #window {
   margin-right: 5px;
 }
 
-#right2 {
-  padding: 0px;
-}
-
 /* --- Workspaces --- */
 
 button {
