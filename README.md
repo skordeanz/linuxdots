@@ -27,7 +27,7 @@ This setup transforms Arch into a clean, cohesive, and productive environment wi
 
 - 🪟 **Hyprland** tiling window manager with dynamic gaps, blur, and animations
 - 🌸 Beautiful **Waybar** status bar with custom styling
-- ❄️ **Walker** app launcher with Catppuccin theme
+- ❄️ **Walker** app launcher
 - \>_ Sleek **Ghostty** terminal with custom config
 - 🐚 **bash** shell with Starship prompt
 - 🎨 **Starship** prompt with minimal, clean design
@@ -53,10 +53,17 @@ This setup transforms Arch into a clean, cohesive, and productive environment wi
 | **Editor** | [Neovim](https://neovim.io/) (LazyVim) |
 | **Monitor** | [btop](https://github.com/aristocratos/btop) |
 | **Fetch** | [fastfetch](https://github.com/fastfetch-cli/fastfetch) |
-| **Theme** | [Miasma](https://omarchy.org) (Omarchy) |
-| **Font** | [JetBrainsMono Nerd Font](https://www.jetbrains.com/lp/mono/) |
+| **Theme** | [Miasma](https://github.com/OldJobobo/omarchy-miasma-theme) (Omarchy) |
+| **Font** | [JetBrainsMono Nerd Font](https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd/) |
 
 ---
+
+## Requirements
+
+Make sure these are installed before using these dotfiles:
+
+- **JetBrainsMono Nerd Font** — [Arch package](https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd/) / [Nerd Fonts release](https://github.com/ryanoasis/nerd-fonts/releases) (required for Waybar and terminal icons)
+- **GNU Stow** — [Arch package](https://archlinux.org/packages/extra/any/stow/) / [GNU website](https://www.gnu.org/software/stow/) (for symlink management)
 
 ### Complete System Configuration
 
@@ -107,7 +114,7 @@ This setup transforms Arch into a clean, cohesive, and productive environment wi
 | Component | App | Config |
 |-----------|-----|--------|
 | **Editor** | [Neovim](https://neovim.io/) (LazyVim) | [⚙️](nvim/.config/nvim/) |
-| **Browser** | [Zen Browser](https://zen-browser.app/) | Catppuccin themed |
+| **Browser** | [Zen Browser](https://zen-browser.app/) | — |
 | **File Manager** | [Nautilus](https://wiki.gnome.org/Apps/Files) | — |
 | **Music** | [Spotify](https://spotify.com/) / [cliamp](https://github.com/cliamp/cliamp) | — |
 | **Video Player** | [mpv](https://mpv.io/) | [⚙️](mpv/.config/mpv/) |
@@ -125,8 +132,8 @@ This setup transforms Arch into a clean, cohesive, and productive environment wi
 
 | Component | Detail |
 |-----------|--------|
-| **Theme** | [Miasma](https://omarchy.org) (Omarchy) |
-| **Font** | [JetBrainsMono Nerd Font](https://www.jetbrains.com/lp/mono/) |
+| **Theme** | [Miasma](https://github.com/OldJobobo/omarchy-miasma-theme) (Omarchy) |
+| **Font** | [JetBrainsMono Nerd Font](https://archlinux.org/packages/extra/any/ttf-jetbrains-mono-nerd/) |
 | **Resolution** | 2880×1800@120 |
 
 </details>
