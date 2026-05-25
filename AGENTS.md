@@ -16,7 +16,6 @@ This repository is a GNU Stow-based dotfiles setup for Omarchy on Arch Linux wit
 | [waybar](waybar/.config/waybar/) | Status bar |
 | [bash](bash/) | Shell |
 | [starship](starship/.config/) | Prompt |
-| [git](git/.config/git/) | VCS |
 | [ghostty](ghostty/.config/ghostty/) | Terminal |
 | [walker](walker/.config/walker/) | Launcher |
 | [nvim](nvim/.config/nvim/) | Editor |

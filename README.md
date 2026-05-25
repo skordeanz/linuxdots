@@ -102,6 +102,7 @@ Make sure these are installed before using these dotfiles:
 | **Monitor** | [btop](https://github.com/aristocratos/btop) | Omarchy default |
 | **Fetch** | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | [⚙️](fastfetch/.config/fastfetch/) |
 | **Git TUI** | [lazygit](https://github.com/jesseduffield/lazygit) | [⚙️](lazygit/.config/lazygit/) |
+| **VCS** | [git](https://git-scm.com/) | — |
 
 </details>
 
@@ -265,13 +266,6 @@ cd ~/.dotfiles
 
 </details>
 
-<details>
-<summary><strong>🔗 Git</strong></summary><br>
-
-- Stow: `stow git`
-- Config lands in: `~/.config/git/config`
-
-</details>
 
 ---
 
@@ -307,7 +301,6 @@ Full keybindings in: [`hypr/.config/hypr/bindings.conf`](hypr/.config/hypr/bindi
 │   └── .bash_profile
 ├── fastfetch/                 # System fetch config
 ├── ghostty/                   # Terminal config
-├── git/                       # Git config
 ├── hypr/                      # Hyprland WM config
 │   └── .config/hypr/
 │       ├── hyprland.conf      # Main config
