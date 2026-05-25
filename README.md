@@ -54,7 +54,7 @@ This setup transforms Arch into a clean, cohesive, and productive environment wi
 | **Monitor** | [btop](https://github.com/aristocratos/btop) |
 | **Fetch** | [fastfetch](https://github.com/fastfetch-cli/fastfetch) |
 | **Theme** | [Miasma](https://github.com/OldJobobo/omarchy-miasma-theme) (Omarchy) |
-| **Font** | [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases) |
+| **Font** | [JetBrainsMono Nerd Font](https://www.jetbrains.com/lp/mono/) |
 
 ---
 
@@ -62,7 +62,7 @@ This setup transforms Arch into a clean, cohesive, and productive environment wi
 
 Make sure these are installed before using these dotfiles:
 
-- **JetBrainsMono Nerd Font** — [Nerd Fonts release](https://github.com/ryanoasis/nerd-fonts/releases) (required for Waybar and terminal icons)
+- **JetBrainsMono Nerd Font** — [Official page](https://www.jetbrains.com/lp/mono/) (required for Waybar and terminal icons)
 - **GNU Stow** — [Arch package](https://archlinux.org/packages/extra/any/stow/) / [GNU website](https://www.gnu.org/software/stow/) (for symlink management)
 
 ### Complete System Configuration
@@ -133,7 +133,7 @@ Make sure these are installed before using these dotfiles:
 | Component | Detail |
 |-----------|--------|
 | **Theme** | [Miasma](https://github.com/OldJobobo/omarchy-miasma-theme) (Omarchy) |
-| **Font** | [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases) |
+| **Font** | [JetBrainsMono Nerd Font](https://www.jetbrains.com/lp/mono/) |
 | **Resolution** | 2880×1800@120 |
 
 </details>
