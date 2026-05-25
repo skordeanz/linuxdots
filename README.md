@@ -102,7 +102,6 @@ Make sure these are installed before using these dotfiles:
 | **Monitor** | [btop](https://github.com/aristocratos/btop) | Omarchy default |
 | **Fetch** | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | [⚙️](fastfetch/.config/fastfetch/) |
 | **Git TUI** | [lazygit](https://github.com/jesseduffield/lazygit) | [⚙️](lazygit/.config/lazygit/) |
-| **VCS** | [git](https://git-scm.com/) | — |
 
 </details>
 
