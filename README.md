@@ -76,15 +76,15 @@ Make sure these are installed before using these dotfiles:
 
 <br>
 
-| Component | App | Config |
-|-----------|-----|--------|
-| **OS** | [Omarchy](https://omarchy.org/) (Arch Linux) | — |
-| **Window Manager** | [Hyprland](https://hyprland.org/) | [⚙️](hypr/.config/hypr/) |
-| **Status Bar** | [Waybar](https://github.com/Alexays/Waybar) | [⚙️](waybar/.config/waybar/) |
-| **App Launcher** | [Walker](https://github.com/abenz1267/walker) | [⚙️](walker/.config/walker/) |
-| **Notifications** | [Mako](https://github.com/emersion/mako) | Omarchy default |
-| **Idle/Lock** | [Hypridle](https://github.com/hyprwm/hypridle) / [Hyprlock](https://github.com/hyprwm/hyprlock) | [⚙️](hypr/.config/hypr/) |
-| **OSD** | [SwayOSD](https://github.com/ErikReider/SwayOSD) | Omarchy default |
+| Component | App |
+|-----------|-----|
+| **OS** | [Omarchy](https://omarchy.org/) (Arch Linux) |
+| **Window Manager** | [Hyprland](https://hyprland.org/) [⚙️](hypr/.config/hypr/) |
+| **Status Bar** | [Waybar](https://github.com/Alexays/Waybar) [⚙️](waybar/.config/waybar/) |
+| **App Launcher** | [Walker](https://github.com/abenz1267/walker) [⚙️](walker/.config/walker/) |
+| **Notifications** | [Mako](https://github.com/emersion/mako) |
+| **Idle/Lock** | [Hypridle](https://github.com/hyprwm/hypridle) / [Hyprlock](https://github.com/hyprwm/hyprlock) [⚙️](hypr/.config/hypr/) |
+| **OSD** | [SwayOSD](https://github.com/ErikReider/SwayOSD) |
 
 </details>
 
@@ -94,14 +94,14 @@ Make sure these are installed before using these dotfiles:
 
 <br>
 
-| Component | App | Config |
-|-----------|-----|--------|
-| **Shell** | [bash](https://www.gnu.org/software/bash/) | [⚙️](bash/) |
-| **Terminal** | [Ghostty](https://ghostty.org/) | [⚙️](ghostty/.config/ghostty/) |
-| **Prompt** | [Starship](https://starship.rs/) | [⚙️](starship/.config/starship.toml) |
-| **Monitor** | [btop](https://github.com/aristocratos/btop) | Omarchy default |
-| **Fetch** | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | [⚙️](fastfetch/.config/fastfetch/) |
-| **Git TUI** | [lazygit](https://github.com/jesseduffield/lazygit) | [⚙️](lazygit/.config/lazygit/) |
+| Component | App |
+|-----------|-----|
+| **Shell** | [bash](https://www.gnu.org/software/bash/) [⚙️](bash/) |
+| **Terminal** | [Ghostty](https://ghostty.org/) [⚙️](ghostty/.config/ghostty/) |
+| **Prompt** | [Starship](https://starship.rs/) [⚙️](starship/.config/starship.toml) |
+| **Monitor** | [btop](https://github.com/aristocratos/btop) |
+| **Fetch** | [fastfetch](https://github.com/fastfetch-cli/fastfetch) [⚙️](fastfetch/.config/fastfetch/) |
+| **Git TUI** | [lazygit](https://github.com/jesseduffield/lazygit) [⚙️](lazygit/.config/lazygit/) |
 
 </details>
 
@@ -111,16 +111,16 @@ Make sure these are installed before using these dotfiles:
 
 <br>
 
-| Component | App | Config |
-|-----------|-----|--------|
-| **Editor** | [Neovim](https://neovim.io/) (LazyVim) | [⚙️](nvim/.config/nvim/) |
-| **Browser** | [Zen Browser](https://zen-browser.app/) | — |
-| **File Manager** | [Nautilus](https://wiki.gnome.org/Apps/Files) | — |
-| **Music** | [Spotify](https://spotify.com/) / [cliamp](https://github.com/cliamp/cliamp) | — |
-| **Video Player** | [mpv](https://mpv.io/) | [⚙️](mpv/.config/mpv/) |
-| **Notes** | [Obsidian](https://obsidian.md/) | — |
-| **Chat** | [Vesktop](https://github.com/Vencord/Vesktop) | — |
-| **Passwords** | [Bitwarden](https://bitwarden.com/) | — |
+| Component | App |
+|-----------|-----|
+| **Editor** | [Neovim](https://neovim.io/) (LazyVim) [⚙️](nvim/.config/nvim/) |
+| **Browser** | [Zen Browser](https://zen-browser.app/) |
+| **File Manager** | [Nautilus](https://wiki.gnome.org/Apps/Files) |
+| **Music** | [Spotify](https://spotify.com/) / [cliamp](https://github.com/cliamp/cliamp) |
+| **Video Player** | [mpv](https://mpv.io/) [⚙️](mpv/.config/mpv/) |
+| **Notes** | [Obsidian](https://obsidian.md/) |
+| **Chat** | [Vesktop](https://github.com/Vencord/Vesktop) |
+| **Passwords** | [Bitwarden](https://bitwarden.com/) |
 
 </details>
 
