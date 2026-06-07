@@ -1,12 +1,1 @@
-return {
-	{
-		"OldJobobo/miasma.nvim",
-		priority = 1000,
-	},
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "miasma",
-		},
-	},
-}
+/home/skordean/.config/omarchy/current/theme/neovim.lua
