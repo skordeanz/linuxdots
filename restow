@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-packages="bash hypr waybar ghostty nvim fastfetch starship xdg mpv lazygit walker omarchy-themes omarchy-hooks omarchy-extensions"
+packages="bash hypr waybar ghostty nvim fastfetch starship xdg mpv lazygit walker"
 
 cd "$(dirname "$0")"
 
