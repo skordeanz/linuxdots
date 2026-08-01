@@ -11,3 +11,6 @@ temp/
 # auto-generated nvim files
 nvim/.config/nvim/lazy-lock.json
 nvim/.config/nvim/lazyvim.json
+
+# omarchy theme wallpapers: large binaries, track configs only
+omarchy-themes/.config/omarchy/themes/*/backgrounds/

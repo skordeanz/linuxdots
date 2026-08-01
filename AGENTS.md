@@ -23,6 +23,9 @@ This repository is a GNU Stow-based dotfiles setup for Omarchy on Arch Linux wit
 | [lazygit](lazygit/.config/lazygit/) | Git TUI |
 | [fastfetch](fastfetch/.config/fastfetch/) | System info |
 | [xdg](xdg/.config/) | Default apps, dirs |
+| [omarchy-themes](omarchy-themes/.config/omarchy/themes/) | Custom Omarchy themes (configs; wallpapers gitignored) |
+| [omarchy-hooks](omarchy-hooks/.config/omarchy/hooks/) | Omarchy automation hooks |
+| [omarchy-extensions](omarchy-extensions/.config/omarchy/extensions/) | Omarchy menu extensions |
 
 ## Build, Test, and Development Commands
 No compile/build step. Validate by stowing and checking links.

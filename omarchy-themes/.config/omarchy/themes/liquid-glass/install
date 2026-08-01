@@ -1,0 +1,82 @@
+#!/bin/bash
+#
+# Liquid Glass — bootstrap.
+#
+# Run this once, ever. It installs one file — a theme-set hook — and then gets
+# out of the way. Everything the theme needs outside its own directory is
+# applied, re-applied and un-applied by that hook from then on: the GTK4 and
+# GTK3 shims, the folder icons, hyprlock's rounding and fastfetch's key
+# colours.
+#
+# It is one command rather than none because Omarchy runs nothing from a theme
+# directory. `omarchy theme install` clones the repo and calls
+# omarchy-theme-set; theme templates are `.tpl` files substituted with colours,
+# not scripts; and hooks live under ~/.config/omarchy/hooks/, which is the
+# user's. So something has to place that first file. This is that something,
+# and it is the only step that is ever manual.
+#
+# After this:
+#   - switching to the theme applies everything, and repairs anything missing
+#   - switching away un-applies what would not revert on its own
+#   - a `git pull` that brings new icons lands on the next switch
+#   - deleting the theme removes every trace, including this hook
+#
+# Safe to run again; it is idempotent. ./uninstall reverses it.
+
+set -euo pipefail
+
+THEME_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+HOOK_DIR="$HOME/.config/omarchy/hooks/theme-set.d"
+STATE="${XDG_STATE_HOME:-$HOME/.local/state}/liquid-glass"
+FASTFETCH="$HOME/.config/fastfetch/config.jsonc"
+
+say() { printf '  %s\n' "$1"; }
+
+echo "Liquid Glass — bootstrapping."
+echo
+
+if [[ ! -f $THEME_DIR/hooks/liquid-glass ]]; then
+  echo "  error: $THEME_DIR/hooks/liquid-glass is missing." >&2
+  exit 1
+fi
+
+mkdir -p "$HOOK_DIR"
+install -m 755 "$THEME_DIR/hooks/liquid-glass" "$HOOK_DIR/liquid-glass"
+say "hook -> $HOOK_DIR/liquid-glass"
+
+# The one state this cannot repair, and it matters for anyone who followed the
+# older README's manual steps.
+#
+# The hook can only put a file back if it was the thing that changed it — it
+# copies the original aside on the way in and restores that, because mapping
+# fastfetch's single "default" back to the three colours it replaced is not
+# invertible. Applied by hand, there is no such copy, and nothing here can
+# honestly invent one: the file on disk is already the modified version.
+#
+# So say it plainly rather than leave a setting that silently never reverts.
+if [[ -f $FASTFETCH ]] && grep -q '"keyColor": "default"' "$FASTFETCH" &&
+  [[ ! -f $STATE/fastfetch.config.jsonc.orig ]]; then
+  echo
+  say "note: fastfetch already carries this theme's colours, but from a hand"
+  say "      edit rather than from the hook — so there is no original on file"
+  say "      and it would not revert when you switch away. To hand it over:"
+  say "        omarchy refresh config fastfetch/config.jsonc && $THEME_DIR/install"
+fi
+
+# Run it now for whatever theme is currently set, so bootstrapping has exactly
+# the same effect as switching. Not silenced: a failure here leaves things
+# half-applied and should be visible.
+CURRENT="$(cat "$HOME/.config/omarchy/current/theme.name" 2>/dev/null || echo '')"
+if bash "$HOOK_DIR/liquid-glass" "$CURRENT"; then
+  if [[ $CURRENT == "liquid-glass" ]]; then
+    say "applied for the active theme"
+  else
+    say "installed; it will apply when you switch to Liquid Glass (currently: ${CURRENT:-none})"
+  fi
+else
+  say "warning: the hook exited non-zero; see above"
+fi
+
+echo
+echo "Done — and that is the last time anything here needs running by hand."
+echo "Restart GTK apps, or log out and back in, to see the folders."
