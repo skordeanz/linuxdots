@@ -3,7 +3,7 @@
   "logo": {
     "type": "file",
     "source": "~/.config/omarchy/branding/about.txt",
-    "color": { "1": "green" },
+    "color": { "1": "default" },
     "padding": {
       "top": 2,
       "right": 6,
@@ -19,39 +19,39 @@
     {
       "type": "host",
       "key": " PC",
-      "keyColor": "green"
+      "keyColor": "default"
     },
     {
       "type": "cpu",
       "key": "│ ├",
       "showPeCoreCount": true,
-      "keyColor": "green"
+      "keyColor": "default"
     },
     {
       "type": "gpu",
       "key": "│ ├",
       "detectionMethod": "pci",
-      "keyColor": "green"
+      "keyColor": "default"
     },
     {
       "type": "display",
       "key": "│ ├󱄄",
-      "keyColor": "green"
+      "keyColor": "default"
     },
     {
       "type": "disk",
       "key": "│ ├󰋊",
-      "keyColor": "green"
+      "keyColor": "default"
     },
     {
       "type": "memory",
       "key": "│ ├",
-      "keyColor": "green"
+      "keyColor": "default"
     },
     {
       "type": "swap",
       "key": "└ └󰓡 ",
-      "keyColor": "green"
+      "keyColor": "default"
     },
     {
       "type": "custom",
@@ -65,61 +65,61 @@
     {
       "type": "command",
       "key": "\ue900 OS",
-      "keyColor": "blue",
+      "keyColor": "default",
       "text": "version=$(omarchy-version); echo \"Omarchy $version\""
     },
     {
       "type": "command",
       "key": "│ ├󰘬",
-      "keyColor": "blue",
+      "keyColor": "default",
       "text": "branch=$(omarchy-version-branch); echo \"$branch\""
     },
     {
       "type": "command",
       "key": "│ ├󰔫",
-      "keyColor": "blue",
+      "keyColor": "default",
       "text": "channel=$(omarchy-version-channel); echo \"$channel\""
     },
     {
       "type": "kernel",
       "key": "│ ├",
-      "keyColor": "blue"
+      "keyColor": "default"
     },
     {
       "type": "wm",
       "key": "│ ├",
-      "keyColor": "blue"
+      "keyColor": "default"
     },
     {
       "type": "de",
       "key": " DE",
-      "keyColor": "blue"
+      "keyColor": "default"
     },
     {
       "type": "terminal",
       "key": "│ ├",
-      "keyColor": "blue"
+      "keyColor": "default"
     },
     {
       "type": "packages",
       "key": "│ ├󰏖",
-      "keyColor": "blue"
+      "keyColor": "default"
     },
     {
       "type": "wmtheme",
       "key": "│ ├󰉼",
-      "keyColor": "blue"
+      "keyColor": "default"
     },
     {
       "type": "command",
       "key": "│ ├󰸌",
-      "keyColor": "blue",
+      "keyColor": "default",
       "text": "theme=$(omarchy-theme-current); echo -e \"$theme \\e[38m●\\e[37m●\\e[36m●\\e[35m●\\e[34m●\\e[33m●\\e[32m●\\e[31m●\""
     },
     {
       "type": "terminalfont",
       "key": "└ └",
-      "keyColor": "blue"
+      "keyColor": "default"
     },
     {
       "type": "custom",
@@ -133,18 +133,18 @@
     {
       "type": "command",
       "key": "󱦟 OS Age",
-      "keyColor": "magenta",
+      "keyColor": "default",
       "text": "echo $(( ($(date +%s) - $(stat -c %W /)) / 86400 )) days"
     },
     {
       "type": "uptime",
       "key": "󱫐 Uptime",
-      "keyColor": "magenta"
+      "keyColor": "default"
     },
     {
       "type": "command",
       "key": " Update",
-      "keyColor": "magenta",
+      "keyColor": "default",
       "text": "updated=$(omarchy-version-pkgs); echo \"$updated\""
     },
     {
