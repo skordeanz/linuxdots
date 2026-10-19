@@ -6,8 +6,8 @@ Each top-level directory is a stow package mirroring `$HOME`, so the live config
 ## Install
 
 ```sh
-git clone https://github.com/skordeanz/linuxdots.git ~/dotfiles
-cd ~/dotfiles
+git clone https://github.com/skordeanz/linuxdots.git ~/.dotfiles
+cd ~/.dotfiles
 ./install.sh            # all packages
 ./install.sh hypr nvim  # subset
 ```
@@ -23,7 +23,7 @@ cd ~/dotfiles
 | `herdr` | `~/.config/herdr/config.toml` |
 | `hypr` | `~/.config/hypr/` |
 | `imv` | `~/.config/imv/` |
-| `local` | `~/.local/bin/cleanup.sh` |
+| `bin` | `~/.local/bin/cleanup.sh` |
 | `nvim` | `~/.config/nvim/` |
 | `omarchy` | `~/.config/omarchy/` — hooks, defaults, branding, extensions, themed templates |
 | `starship` | `~/.config/starship.toml` |
