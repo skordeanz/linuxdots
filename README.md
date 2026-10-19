@@ -30,3 +30,4 @@ stow -t ~ */          # or all of them at once
 | `uwsm` | `~/.config/uwsm/env.d/20-capture` |
 | `voxtype` | `~/.config/voxtype/`, `~/.config/systemd/user/voxtype.service` |
 | `xcompose` | `~/.XCompose` |
+| `zed` | `~/.config/zed/settings.json`, `keymap.json`, `themes/` |
