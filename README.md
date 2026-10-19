@@ -22,6 +22,7 @@ the repo either way.
 
 | Package | Target(s) |
 | --- | --- |
+| `bash` | `~/.bashrc` — the actually-used shell (zsh is not installed; `zsh/` is a placeholder) |
 | `btop` | `~/.config/btop/` |
 | `foot` | `~/.config/foot/` |
 | `git` | `~/.config/git/` |
@@ -51,6 +52,22 @@ the repo either way.
 
 Migration leftovers (tool `*.bak` / `*.lacquer-backup-*` files) sit in
 `.attic/`, which is git-ignored.
+
+## The hermarchy theme
+
+`~/.config/omarchy/themes/hermarchy` is a git clone of
+<https://github.com/archer-clawbot/omarchy-hermarchy-theme> (29M, mostly
+wallpapers), so it is deliberately **not** vendored into this repo. Reinstall
+it on a new machine with:
+
+```sh
+git clone https://github.com/archer-clawbot/omarchy-hermarchy-theme.git \
+  ~/.config/omarchy/themes/hermarchy
+omarchy-current-theme set hermarchy
+```
+
+Theme *behavior* that lives outside the clone (hooks, defaults, branding,
+extensions, themed templates) **is** tracked under the `omarchy` package.
 
 ## Keeping it current
 
