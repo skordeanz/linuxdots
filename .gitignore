@@ -1,7 +1,6 @@
 # Never track tool backup droppings inside packages.
 **/*.bak
 **/*.bak.*
-**/*.lacquer-backup-*
 **/*~
 **/*.swp
 
