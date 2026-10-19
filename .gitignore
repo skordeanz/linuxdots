@@ -10,7 +10,6 @@ herdr/.config/herdr/*.log
 herdr/.config/herdr/session.json
 herdr/.config/herdr/release-notes.json
 herdr/.config/herdr/.plugins.lock
-omarchy/.config/omarchy/screen-time/history.json
 
 # nvim runtime droppings (stow never links .gitignore, so these live here).
 nvim/.config/nvim/tt.*
