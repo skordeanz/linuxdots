@@ -1,0 +1,12 @@
+[submodule "omarchy/.config/omarchy/plugins/agx.screen-time"]
+	path = omarchy/.config/omarchy/plugins/agx.screen-time
+	url = https://github.com/ax1g/quickshell-screentime-plugin.git
+[submodule "omarchy/.config/omarchy/plugins/tornikegomareli.spaces"]
+	path = omarchy/.config/omarchy/plugins/tornikegomareli.spaces
+	url = https://github.com/tornikegomareli/omarchy-spaces.git
+[submodule "omarchy/.config/omarchy/plugins/crmne.hyprmoncfg"]
+	path = omarchy/.config/omarchy/plugins/crmne.hyprmoncfg
+	url = https://github.com/crmne/omarchy-hyprmoncfg.git
+[submodule "omarchy/.config/omarchy/themes/hermarchy"]
+	path = omarchy/.config/omarchy/themes/hermarchy
+	url = https://github.com/archer-clawbot/omarchy-hermarchy-theme.git

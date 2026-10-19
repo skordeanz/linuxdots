@@ -8,6 +8,7 @@ Each top-level directory is a stow package mirroring `$HOME`, so the live config
 ```sh
 git clone https://github.com/skordeanz/linuxdots.git ~/.dotfiles
 cd ~/.dotfiles
+git submodule update --init --recursive   # plugins and themes
 stow -t ~ hypr nvim   # any subset of the packages below
 stow -t ~ */          # or all of them at once
 ```
@@ -23,7 +24,7 @@ stow -t ~ */          # or all of them at once
 | `hypr` | `~/.config/hypr/` |
 | `bin` | `~/.local/bin/cleanup.sh` |
 | `nvim` | `~/.config/nvim/` |
-| `omarchy` | `~/.config/omarchy/` — hooks, defaults, branding, extensions, themed templates |
+| `omarchy` | `~/.config/omarchy/` — hooks, defaults, branding, extensions, plugins, themes |
 | `starship` | `~/.config/starship.toml` |
 | `tmux` | `~/.config/tmux/` |
 | `uwsm` | `~/.config/uwsm/env.d/20-capture` |
