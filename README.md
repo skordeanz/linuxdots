@@ -9,8 +9,14 @@ Each top-level directory is a stow package mirroring `$HOME`, so the live config
 git clone https://github.com/skordeanz/linuxdots.git ~/.linuxdots
 cd ~/.linuxdots
 git submodule update --init --recursive   # plugins and themes
-stow -t ~ hypr nvim   # any subset of the packages below
-stow -t ~ */          # or all of them at once
+stow -t ~ */                              # all packages
+```
+
+On an empty `$HOME`, a subset install needs `--no-folding`, otherwise stow may
+link `~/.config` itself:
+
+```sh
+stow -t ~ --no-folding hypr nvim
 ```
 
 ## Packages
