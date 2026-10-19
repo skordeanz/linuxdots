@@ -10,11 +10,23 @@
 
 ## Install
 
+Machine with nothing cloned yet — one line:
+
+```sh
+curl -sL https://raw.githubusercontent.com/skordeanz/linuxdots/main/install.sh | bash
+```
+
+From a clone you already have:
+
 ```sh
 git clone https://github.com/skordeanz/linuxdots.git ~/.linuxdots
 cd ~/.linuxdots
-git submodule update --init --recursive   # plugins
-stow -t ~ */                              # everything
+./install.sh                 # every package
+./install.sh hypr nvim zed   # only these
+./install.sh --list          # package names
+./install.sh --help          # usage
 ```
 
-<sub>On an empty <code>$HOME</code>, install a subset with <code>--no-folding</code> so stow doesn't turn <code>~/.config</code> itself into a symlink: <code>stow -t ~ --no-folding hypr nvim</code></sub>
+Re-running updates the repo and restows, so it's safe to run any time.
+
+Packages: `bash` `bin` `foot` `git` `herdr` `hypr` `nvim` `omarchy` `starship` `tmux` `uwsm` `voxtype` `xcompose` `zed`
