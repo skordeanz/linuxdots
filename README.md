@@ -29,4 +29,10 @@ cd ~/.linuxdots
 
 Re-running updates the repo and restows, so it's safe to run any time.
 
-Packages: `bash` `bin` `foot` `git` `herdr` `hypr` `nvim` `omarchy` `starship` `tmux` `uwsm` `voxtype` `xcompose` `zed`
+Any of these can be passed to `./install.sh`:
+
+```
+bash      bin       foot      git       herdr     hypr
+nvim      omarchy   starship  tmux      uwsm      voxtype
+xcompose  zed
+```
