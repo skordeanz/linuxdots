@@ -1,4 +1,4 @@
-# dotfiles
+# linuxdots
 
 My Omarchy (Arch + Hyprland) configs, managed with [GNU Stow](https://www.gnu.org/software/stow/).
 Each top-level directory is a stow package mirroring `$HOME`, so the live config **is** the repo.
@@ -6,8 +6,8 @@ Each top-level directory is a stow package mirroring `$HOME`, so the live config
 ## Install
 
 ```sh
-git clone https://github.com/skordeanz/linuxdots.git ~/.dotfiles
-cd ~/.dotfiles
+git clone https://github.com/skordeanz/linuxdots.git ~/.linuxdots
+cd ~/.linuxdots
 git submodule update --init --recursive   # plugins and themes
 stow -t ~ hypr nvim   # any subset of the packages below
 stow -t ~ */          # or all of them at once
