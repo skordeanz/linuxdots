@@ -21,7 +21,6 @@ cd ~/.dotfiles
 | `git` | `~/.config/git/` |
 | `herdr` | `~/.config/herdr/config.toml` |
 | `hypr` | `~/.config/hypr/` |
-| `imv` | `~/.config/imv/` |
 | `bin` | `~/.local/bin/cleanup.sh` |
 | `nvim` | `~/.config/nvim/` |
 | `omarchy` | `~/.config/omarchy/` — hooks, defaults, branding, extensions, themed templates |
