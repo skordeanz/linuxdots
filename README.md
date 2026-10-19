@@ -9,7 +9,7 @@ edit either one and they stay in sync, with no copy step to forget.
 ## Install on a new machine
 
 ```sh
-git clone git@github.com:skordeanz/dotfiles.git ~/dotfiles
+git clone git@github.com:skordeanz/linuxdots.git ~/dotfiles
 cd ~/dotfiles
 ./install.sh            # restow every package
 ./install.sh hypr nvim  # ...or just the ones you name
