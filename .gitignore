@@ -1,7 +1,4 @@
-# Local-only scratch space: tool backup files parked during migration.
-.attic/
-
-# Never track editor/tool backup droppings inside packages.
+# Never track tool backup droppings inside packages.
 **/*.bak
 **/*.bak.*
 **/*.lacquer-backup-*
