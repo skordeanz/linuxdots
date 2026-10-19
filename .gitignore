@@ -1,0 +1,16 @@
+# Local-only scratch space: tool backup files parked during migration.
+.attic/
+
+# Never track editor/tool backup droppings inside packages.
+**/*.bak
+**/*.bak.*
+**/*.lacquer-backup-*
+**/*~
+**/*.swp
+
+# Runtime state written by tools (kept on disk, just not versioned).
+herdr/.config/herdr/*.log
+herdr/.config/herdr/session.json
+herdr/.config/herdr/release-notes.json
+herdr/.config/herdr/.plugins.lock
+omarchy/.config/omarchy/screen-time/history.json
