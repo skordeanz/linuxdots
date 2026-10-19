@@ -22,7 +22,7 @@ From a clone you already have:
 git clone https://github.com/skordeanz/linuxdots.git ~/.linuxdots
 cd ~/.linuxdots
 ./install.sh                 # every package
-./install.sh hypr nvim zed   # only these
+./install.sh <name>...       # only those — any names listed below
 ./install.sh --list          # package names
 ./install.sh --help          # usage
 ```
