@@ -7,6 +7,3 @@
 [submodule "omarchy/.config/omarchy/plugins/crmne.hyprmoncfg"]
 	path = omarchy/.config/omarchy/plugins/crmne.hyprmoncfg
 	url = https://github.com/crmne/omarchy-hyprmoncfg.git
-[submodule "omarchy/.config/omarchy/themes/hermarchy"]
-	path = omarchy/.config/omarchy/themes/hermarchy
-	url = https://github.com/archer-clawbot/omarchy-hermarchy-theme.git
