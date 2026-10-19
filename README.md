@@ -17,7 +17,6 @@ cd ~/.dotfiles
 | Package | Target(s) |
 | --- | --- |
 | `bash` | `~/.bashrc` |
-| `btop` | `~/.config/btop/btop.conf` |
 | `foot` | `~/.config/foot/` |
 | `git` | `~/.config/git/` |
 | `herdr` | `~/.config/herdr/config.toml` |
