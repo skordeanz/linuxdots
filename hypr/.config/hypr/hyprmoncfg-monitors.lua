@@ -10,3 +10,5 @@ hl.monitor({
   sdr_min_luminance = 0.2,
   sdr_max_luminance = 80,
 })
+
+hl.config({ input = { touchdevice = { transform = 0 }, tablet = { transform = 0 } } })
