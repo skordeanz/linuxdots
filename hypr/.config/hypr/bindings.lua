@@ -47,11 +47,9 @@ hl.unbind("SUPER + SHIFT + S") -- google maps
 o.bind("SUPER + ALT + D", "Display: SDR desktop", "hyprmoncfg apply desktop --confirm-timeout 0")
 o.bind("SUPER + ALT + H", "Display: HDR", "hyprmoncfg apply hdr --confirm-timeout 0")
 
--- BEGIN Tusche Bar keys (managed)
--- Super+Space / Super+Alt+Space open the Tusche Bar's menu under the logo
--- (search line / Apps list); without the bar, Omarchy's own menus open.
-hl.unbind("SUPER + SPACE")
-hl.unbind("SUPER + ALT + SPACE")
-o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-shell tusche-bar search || omarchy-menu toggle root")
-o.bind("SUPER + ALT + SPACE", "Apps menu", "omarchy-shell tusche-bar apps || omarchy-menu toggle apps")
--- END Tusche Bar keys (managed)
+-- Dictation keys from before Alt + Space and Right Alt became the defaults.
+-- Remove these lines to give the keys back to applications.
+if o.dictation_installed and o.dictation_installed() then
+  o.bind("SUPER + CTRL + X", "Toggle dictation", "omarchy-dictation toggle")
+  o.bind_hold("F9", "Start dictation (push-to-talk)", "omarchy-dictation start", "Stop dictation (push-to-talk)", "omarchy-dictation stop")
+end
