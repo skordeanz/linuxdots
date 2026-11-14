@@ -3,6 +3,7 @@
 **/*.bak.*
 **/*~
 **/*.swp
+omarchy/.config/omarchy/plugins/jankeesvw.notification-center/.git.backup/
 
 # Runtime state written by tools (kept on disk, just not versioned).
 herdr/.config/herdr/*.log
