@@ -28,7 +28,7 @@
 	autoupdate = true        # Apply stored conflict resolutions automatically
 [user]
 	name = Sourav Sharma
-	email = skordeanz@gmail.com
+	email = souravvbhardwaj@gmail.com
 [credential "https://github.com"]
 	helper = !gh auth git-credential
 [credential "https://gist.github.com"]

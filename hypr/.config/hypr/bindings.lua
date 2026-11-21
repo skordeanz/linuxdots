@@ -15,6 +15,11 @@
 -- Add a new binding.
 -- o.bind("SUPER + SHIFT + R", "SSH", "alacritty -e ssh your-server")
 
+-- Omarchy 4.5.0 opens the app grid from SUPER + ALT + SPACE. Restore the
+-- classic scrolling app list inside the Omarchy menu instead.
+hl.unbind("SUPER + ALT + SPACE")
+o.bind("SUPER + ALT + SPACE", "Apps (list)", { menu = "apps" })
+
 -- Change an existing binding by unbinding it first, then binding the key again.
 hl.unbind("SUPER + SHIFT + D") -- docker
 hl.unbind("SUPER + SHIFT + SLASH") -- 1password
@@ -53,3 +58,14 @@ if o.dictation_installed and o.dictation_installed() then
   o.bind("SUPER + CTRL + X", "Toggle dictation", "omarchy-dictation toggle")
   o.bind_hold("F9", "Start dictation (push-to-talk)", "omarchy-dictation start", "Stop dictation (push-to-talk)", "omarchy-dictation stop")
 end
+
+-- fathom: begin
+do
+  local fathom = os.getenv("HOME") .. "/.config/omarchy/plugins/io.github.mtolhuys.fathom/hypr/fathom.lua"
+  local file = io.open(fathom, "r")
+  if file then
+    file:close()
+    pcall(dofile, fathom)
+  end
+end
+-- fathom: end

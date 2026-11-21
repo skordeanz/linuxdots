@@ -32,4 +32,9 @@
   // "about": {"icon":"","label":"About","action":"omarchy-launch-or-focus-tui \"zsh -c 'fastfetch; read -k 1'\""},
   // Added by Hello Lock: opens its settings. Turn off in Settings > Lock screen.
   "appearance.lockscreen": {"icon":"","label":"Lock Screen","description":"Hello Lock settings","aliases":["lock screen","hello lock"],"when":"[[ -d ~/.config/omarchy/plugins/hello-lock ]]","action":"omarchy-shell lock settings"},
+
+  // Omarchy 4.5.0 makes the Apps row open the dock's full-screen app grid.
+  // Clearing the action turns it back into a scrolling submenu list. The other
+  // fields must be repeated because a partial override replaces them.
+  "apps": {"icon":"󰀻","label":"Apps","aliases":["app","applications"],"provider":"apps","action":""},
 }
